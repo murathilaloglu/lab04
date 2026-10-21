@@ -1,0 +1,33 @@
+=== Yol 1: LEFT JOIN ... IS NULL ===
+SELECT u.ad FROM uyeler u LEFT JOIN kayitlar k ON k.uye_id = u.uye_id WHERE k.kayit_id IS NULL;
+
+                              QUERY PLAN
+-----------------------------------------------------------------------
+ Hash Right Join  (cost=6.16..12.62 rows=1 width=13)
+   Hash Cond: (k.uye_id = u.uye_id)
+   Filter: (k.kayit_id IS NULL)
+   ->  Seq Scan on kayitlar k  (cost=0.00..5.51 rows=351 width=8)
+   ->  Hash  (cost=3.85..3.85 rows=185 width=17)
+         ->  Seq Scan on uyeler u  (cost=0.00..3.85 rows=185 width=17)
+(6 rows)
+
+=== Yol 2: NOT EXISTS ===
+SELECT u.ad FROM uyeler u WHERE NOT EXISTS (SELECT 1 FROM kayitlar k WHERE k.uye_id = u.uye_id);
+
+                               QUERY PLAN
+------------------------------------------------------------------------
+ Hash Anti Join  (cost=9.90..15.33 rows=39 width=13)
+   Hash Cond: (u.uye_id = k.uye_id)
+   ->  Seq Scan on uyeler u  (cost=0.00..3.85 rows=185 width=17)
+   ->  Hash  (cost=5.51..5.51 rows=351 width=4)
+         ->  Seq Scan on kayitlar k  (cost=0.00..5.51 rows=351 width=4)
+(5 rows)
+
+
+=== Gözlem ===
+NOT EXISTS sorgusunu PostgreSQL doğrudan "Hash Anti Join" olarak planladı, yani
+"eşleşmesi olmayanları getir" niyetini tanıdı. LEFT JOIN ... IS NULL sorgusunda ise
+önce tablolar normal şekilde birleştirildi (Hash Right Join), eşleşmeyenler sonradan
+ayrı bir Filter adımıyla ayıklandı. Ayrıca planlayıcı LEFT JOIN için 1 satır, NOT EXISTS
+için 39 satır tahmin etti; bu tahmin farkı NOT EXISTS'in niyeti daha doğru ifade ettiğini
+gösteriyor.

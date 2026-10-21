@@ -1,0 +1,60 @@
+   salon_adi    |             ders_adi             | ucret | ucret_sirasi 
+----------------+----------------------------------+-------+--------------
+ Açık Alan      | Yüzme Teknikleri — Orta          |   550 |            1
+ Açık Alan      | Kuvvet Antrenmanı — Orta         |   500 |            2
+ Açık Alan      | Crossfit WOD — İleri             |   500 |            2
+ Açık Alan      | Sabah Yogası — Başlangıç         |   450 |            4
+ Açık Alan      | Kickboks — Başlangıç             |   450 |            4
+ Açık Alan      | Hamile Yogası — İleri            |   400 |            6
+ Ana Salon      | Gençlik Yüzme — Orta             |   600 |            1
+ Ana Salon      | Yüzme Teknikleri — İleri         |   550 |            2
+ Ana Salon      | İleri Pilates — Başlangıç        |   400 |            3
+ Ana Salon      | İleri Pilates — İleri            |   300 |            4
+ Dövüş Salonu   | Crossfit WOD — Orta              |   600 |            1
+ Dövüş Salonu   | Fonksiyonel Antrenman — İleri    |   550 |            2
+ Dövüş Salonu   | Kardiyo Dayanıklılık — Başlangıç |   450 |            3
+ Dövüş Salonu   | Boks Temelleri — İleri           |   400 |            4
+ Dövüş Salonu   | Kuvvet Antrenmanı — İleri        |   350 |            5
+ Dövüş Salonu   | Gençlik Yüzme — Başlangıç        |   350 |            5
+ Dövüş Salonu   | Kıdemli Fitness — Başlangıç      |   350 |            5
+ Havuz          | Pilates Matwork — İleri          |   600 |            1
+ Havuz          | Esneklik ve Denge — İleri        |   550 |            2
+ Havuz          | Kickboks — Orta                  |   350 |            3
+ Spinning Odası | Kickboks — İleri                 |   600 |            1
+ Stüdyo A       | Hamile Yogası — Orta             |   600 |            1
+ Stüdyo A       | Pilates Matwork — Başlangıç      |   500 |            2
+ Stüdyo A       | Kıdemli Fitness — Orta           |   350 |            3
+ Stüdyo B       | Fonksiyonel Antrenman — Orta     |   600 |            1
+ Stüdyo B       | Pilates Matwork — Orta           |   550 |            2
+ Stüdyo B       | Crossfit WOD — Başlangıç         |   550 |            2
+ Stüdyo B       | Esneklik ve Denge — Başlangıç    |   450 |            4
+ Stüdyo B       | Yüzme Teknikleri — Başlangıç     |   400 |            5
+(29 rows)
+
+   salon_adi    |           ders_adi           | ucret 
+----------------+------------------------------+-------
+ Ana Salon      | Gençlik Yüzme — Orta         |   600
+ Stüdyo A       | Hamile Yogası — Orta         |   600
+ Stüdyo B       | Fonksiyonel Antrenman — Orta |   600
+ Havuz          | Pilates Matwork — İleri      |   600
+ Dövüş Salonu   | Crossfit WOD — Orta          |   600
+ Açık Alan      | Yüzme Teknikleri — Orta      |   550
+ Spinning Odası | Kickboks — İleri             |   600
+(7 rows)
+
+ ay | kayit_sayisi | fark 
+----+--------------+------
+  1 |           23 |     
+  2 |           37 |   14
+  3 |           32 |   -5
+  4 |           29 |   -3
+  5 |           31 |    2
+  6 |           29 |   -2
+  7 |           27 |   -2
+  8 |           30 |    3
+  9 |           28 |   -2
+ 10 |           26 |   -2
+ 11 |           30 |    4
+ 12 |           29 |   -1
+(12 rows)
+

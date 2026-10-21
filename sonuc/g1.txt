@@ -1,0 +1,65 @@
+      ad       | dogum_yili 
+---------------+------------
+ Nazlı Doğan   |       2008
+ Emine Kurt    |       2001
+ Hasan Erdoğan |       2008
+ Emine Çetin   |       2000
+ Sevgi Yıldız  |       2002
+ Burak Aslan   |       2000
+ Deniz Aslan   |       2007
+ Mehmet Şahin  |       2002
+ Elif Şahin    |       2006
+ Ayşe Erdoğan  |       2007
+ Mehmet Aydın  |       2000
+ Hülya Aydın   |       2008
+ Zeynep Koç    |       2001
+ Yakup Güneş   |       2004
+ Ece Güneş     |       2006
+ Ceren Polat   |       2000
+ Deniz Demir   |       2008
+ Elif Arslan   |       2005
+ Emine Yılmaz  |       2006
+ Orhan Yıldız  |       2008
+ Mehmet Şahin  |       2000
+ Sevgi Güneş   |       2004
+ Ali Özdemir   |       2000
+ Hasan Şahin   |       2001
+ Burak Kurt    |       2004
+ Mehmet Kurt   |       2001
+ Tolga Özdemir |       2002
+ Nazlı Güneş   |       2000
+ Mehmet Kurt   |       2004
+ Ceren Yılmaz  |       2001
+ Kemal Kaya    |       2003
+ Hülya Aslan   |       2000
+ Hülya Kaya    |       2005
+ Nazlı Yılmaz  |       2001
+ Murat Kurt    |       2004
+ Nazlı Koç     |       2000
+ Emine Bulut   |       2004
+ Elif Taş      |       2004
+(38 rows)
+
+ en_dusuk | en_yuksek | toplam 
+----------+-----------+--------
+      300 |       600 |  13850
+(1 row)
+
+  brans   | egitmen_sayisi 
+----------+----------------
+ Fitness  |              2
+ Boks     |              2
+ Pilates  |              1
+ Yüzme    |              1
+ Yoga     |              1
+ Crossfit |              1
+(6 rows)
+
+      ad      | ders_sayisi 
+--------------+-------------
+ Dövüş Salonu |           7
+ Açık Alan    |           6
+ Stüdyo B     |           5
+ Ana Salon    |           4
+(4 rows)
+

@@ -1,0 +1,34 @@
+              ad               | ucret 
+-------------------------------+-------
+ Pilates Matwork — İleri       |   600
+ Kuvvet Antrenmanı — Orta      |   500
+ Fonksiyonel Antrenman — İleri |   550
+ Yüzme Teknikleri — İleri      |   550
+ Hamile Yogası — Orta          |   600
+ Pilates Matwork — Orta        |   550
+ Crossfit WOD — İleri          |   500
+ Esneklik ve Denge — İleri     |   550
+ Fonksiyonel Antrenman — Orta  |   600
+ Crossfit WOD — Başlangıç      |   550
+ Crossfit WOD — Orta           |   600
+ Pilates Matwork — Başlangıç   |   500
+ Gençlik Yüzme — Orta          |   600
+ Kickboks — İleri              |   600
+ Yüzme Teknikleri — Orta       |   550
+(15 rows)
+
+            ad             
+---------------------------
+ Esneklik ve Denge — İleri
+ Hamile Yogası — İleri
+(2 rows)
+
+      ad       | kayit_sayisi 
+---------------+--------------
+ Deniz Aydın   |            6
+ Ahmet Erdoğan |            6
+ Melek Erdoğan |            6
+ Fatma Çelik   |            6
+ Murat Aydın   |            6
+(5 rows)
+
